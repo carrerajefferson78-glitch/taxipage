@@ -1,0 +1,515 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+padding-top:90px;
+color:#222;
+}
+
+/* HEADER */
+.header-principal{
+height:90px;
+background:#111;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 9%;
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+border-bottom:3px solid #ffc107;
+}
+
+.logo-container{
+display:flex;
+align-items:center;
+
+}
+.logo-img{
+width:65px;
+height:auto;
+object-fit:contain;
+}
+
+.titulo-sitio{
+color:white;
+font-size:25px;
+margin-left:25px;
+}
+
+.titulo-sitio span{
+color:#ffc107;
+}
+
+.nav-principal ul{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+.nav-principal a{
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+.nav-principal a:hover{
+color:#ffc107;
+}
+
+.menu-toggle{
+display:none;
+background:none;
+border:0;
+color:#ffc107;
+font-size:30px;
+}
+
+/* HERO */
+/* ==========================
+   HERO CON CARRUSEL
+========================== */
+
+
+.hero{
+
+height:600px;
+
+position:relative;
+
+overflow:hidden;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+}
+
+
+
+/* IMAGENES */
+
+.hero-slider{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+}
+
+
+
+.hero-slide{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+opacity:0;
+
+transition:opacity 1.5s ease-in-out;
+
+}
+
+
+
+.hero-slide.activo{
+
+opacity:1;
+
+}
+
+
+
+/* OSCURECER IMAGEN */
+
+.hero-overlay{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+90deg,
+rgba(0,0,0,.75),
+rgba(0,0,0,.35)
+);
+z-index:1;
+}
+
+
+
+
+/* TEXTO ENCIMA */
+
+.hero-contenido{
+
+position:relative;
+
+z-index:2;
+
+text-align:center;
+
+}
+
+
+
+.hero h2{
+
+font-size:45px;
+
+}
+
+
+
+.hero p{
+
+font-size:22px;
+
+margin:20px;
+
+}
+
+.hero h2{
+font-size:45px;
+}
+
+.hero p{
+font-size:22px;
+margin:20px;
+}
+
+.boton{
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+margin:10px;
+display:inline-block;
+}
+
+.whatsapp{
+background:#25d366;
+color:white;
+}
+
+.llamar{
+background:#ffc107;
+color:black;
+}
+
+/* ESTADISTICAS */
+.estadisticas{
+
+display:flex;
+
+justify-content:center;
+
+gap:50px;
+
+padding:40px;
+
+background:#ffc107;
+
+text-align:center;
+
+}
+
+
+
+.estadisticas i{
+
+font-size:40px;
+
+}
+
+.seccion{
+padding:60px 10%;
+text-align:center;
+}
+
+.seccion h2,
+.contacto h2{
+font-size:35px;
+margin-bottom:30px;
+}
+
+.tarjetas{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.tarjeta{
+width:300px;
+padding:30px;
+box-shadow:0 5px 20px #ccc;
+border-radius:15px;
+}
+
+.tarjeta i{
+font-size:45px;
+color:#ffc107;
+}
+
+.galeria{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.galeria img{
+
+width:300px;
+
+height:200px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+}
+
+.contacto{
+padding:60px 10%;
+text-align:center;
+}
+
+.contacto iframe{
+width:90%;
+height:350px;
+border:0;
+margin-top:25px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.redes i{
+font-size:30px;
+margin:10px;
+color:#ffc107;
+}
+
+.whatsapp-flotante{
+position:fixed;
+right:25px;
+bottom:25px;
+background:#25d366;
+color:white;
+font-size:35px;
+padding:15px;
+border-radius:50%;
+}
+/* SECCION QUIENES SOMOS */
+
+#nosotros{
+    padding:50px 20px;
+}
+
+#nosotros h2{
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+#nosotros p{
+    max-width:700px;
+    margin:0 auto;
+    font-size:20px;
+    line-height:1.6;
+}
+/* ==========================
+   DISEÑO PARA CELULAR
+========================== */
+
+
+@media(max-width:768px){
+
+
+/* HEADER */
+
+.header-principal{
+
+height:75px;
+
+padding:0 15px;
+
+}
+
+
+
+.logo-img{
+
+width:45px;
+
+height:auto;
+
+}
+
+
+
+.titulo-sitio{
+
+font-size:14px;
+
+margin-left:10px;
+
+line-height:18px;
+
+max-width:180px;
+
+}
+
+
+
+/* MENU CELULAR */
+
+.nav-principal{
+
+display:none;
+
+position:absolute;
+
+top:75px;
+
+left:0;
+
+width:100%;
+
+background:#111;
+
+}
+
+
+
+.nav-principal ul{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:20px;
+
+gap:20px;
+
+}
+
+
+
+.nav-principal a{
+
+font-size:18px;
+
+}
+
+
+
+.menu-toggle{
+
+display:block;
+
+}
+
+
+
+
+
+/* SECCIONES */
+
+.estadisticas,
+
+.tarjetas,
+
+.galeria{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+
+
+
+/* HERO CARRUSEL */
+
+.hero{
+
+height:550px;
+
+}
+
+.hero-contenido{
+
+font-size:20px;
+    margin:15px auto 25px;
+    max-width:650px;
+    line-height:1.4;
+
+}
+
+.hero h2{
+font-size:32px;
+line-height:1.2;
+}
+
+.hero p{
+font-size:18px;
+margin:15px 0;
+}
+
+/* BOTONES */
+
+.boton{
+width:90%;
+max-width:280px;
+margin:8px auto;
+display:block;
+}
+
+/* IMAGENES GALERIA */
+.galeria img{
+width:90%;
+height:auto;
+}
+}
