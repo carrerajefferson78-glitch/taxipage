@@ -79,92 +79,48 @@ font-size:30px;
 /* ==========================
    HERO CON CARRUSEL
 ========================== */
-
-
 .hero{
-
 height:600px;
-
 position:relative;
-
 overflow:hidden;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
 color:white;
-
 }
-
-
 
 /* IMAGENES */
-
 .hero-slider{
-
 position:absolute;
-
 top:0;
-
 left:0;
-
 width:100%;
-
 height:100%;
-
 }
-
-
 
 .hero-slide{
-
 position:absolute;
-
 top:0;
-
 left:0;
-
 width:100%;
-
 height:100%;
-
 object-fit:cover;
-
 opacity:0;
-
 transition:opacity 1.5s ease-in-out;
-
 }
-
-
 
 .hero-slide.activo{
-
 opacity:1;
-
 }
 
-
-
 /* OSCURECER IMAGEN */
-
 .hero-overlay{
-
 position:absolute;
-
 top:0;
-
 left:0;
-
 width:100%;
-
 height:100%;
-
 background:
-
 linear-gradient(
 90deg,
 rgba(0,0,0,.75),
@@ -173,37 +129,20 @@ rgba(0,0,0,.35)
 z-index:1;
 }
 
-
-
-
 /* TEXTO ENCIMA */
-
 .hero-contenido{
-
 position:relative;
-
 z-index:2;
-
 text-align:center;
-
 }
-
-
 
 .hero h2{
-
 font-size:45px;
-
 }
 
-
-
 .hero p{
-
 font-size:22px;
-
 margin:20px;
-
 }
 
 .hero h2{
@@ -236,27 +175,16 @@ color:black;
 
 /* ESTADISTICAS */
 .estadisticas{
-
 display:flex;
-
 justify-content:center;
-
 gap:50px;
-
 padding:40px;
-
 background:#ffc107;
-
 text-align:center;
-
 }
 
-
-
 .estadisticas i{
-
 font-size:40px;
-
 }
 
 .seccion{
@@ -295,15 +223,10 @@ gap:20px;
 }
 
 .galeria img{
-
 width:300px;
-
 height:200px;
-
 object-fit:cover;
-
 border-radius:15px;
-
 }
 
 .contacto{
@@ -362,130 +285,76 @@ border-radius:50%;
    DISEÑO PARA CELULAR
 ========================== */
 
-
 @media(max-width:768px){
-
 
 /* HEADER */
 
 .header-principal{
-
 height:75px;
-
 padding:0 15px;
-
 }
-
-
 
 .logo-img{
-
 width:45px;
-
 height:auto;
-
 }
-
-
 
 .titulo-sitio{
-
 font-size:14px;
-
 margin-left:10px;
-
 line-height:18px;
-
 max-width:180px;
-
 }
-
-
 
 /* MENU CELULAR */
-
+/* MENU CELULAR */
 .nav-principal{
-
 display:none;
-
 position:absolute;
-
 top:75px;
-
 left:0;
-
 width:100%;
-
 background:#111;
-
+z-index:2000;
 }
 
-
+.nav-principal.activo{
+display:block;
+}
 
 .nav-principal ul{
-
-flex-direction:column;
-
+flex-direction:column;  
 text-align:center;
-
 padding:20px;
-
 gap:20px;
-
 }
-
-
 
 .nav-principal a{
-
 font-size:18px;
-
 }
-
-
 
 .menu-toggle{
-
 display:block;
-
 }
-
-
-
-
 
 /* SECCIONES */
-
 .estadisticas,
-
 .tarjetas,
-
 .galeria{
-
 flex-direction:column;
-
 align-items:center;
-
 }
 
-
-
-
 /* HERO CARRUSEL */
-
 .hero{
-
 height:550px;
-
 }
 
 .hero-contenido{
-
 font-size:20px;
     margin:15px auto 25px;
     max-width:650px;
     line-height:1.4;
-
 }
 
 .hero h2{
@@ -499,7 +368,6 @@ margin:15px 0;
 }
 
 /* BOTONES */
-
 .boton{
 width:90%;
 max-width:280px;
